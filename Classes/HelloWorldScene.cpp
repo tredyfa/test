@@ -33,11 +33,12 @@ bool HelloWorld::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
 
-    ArmatureDataManager::getInstance()->addArmatureFileInfo("DemoPlayer0.png" , "DemoPlayer0.plist" , "DemoPlayer.ExportJson");
-    Armature *armature = Armature::create( "NewAnimation");
+    ArmatureDataManager::getInstance()->addArmatureFileInfo("zhanshi0.png" , "zhanshi0.plist" , "zhanshi.ExportJson");
+    
+    Armature *armature = Armature::create("zhanshi");
     armature->setPosition(Point(visibleSize.width * 0.5, visibleSize.height * 0.5));
     // 播放动画
-    armature->getAnimation()->play("walk");
+    armature->getAnimation()->play("zhanshi_xingzou");
     this->addChild(armature);
 
     // add "HelloWorld" splash screen"
